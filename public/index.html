@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/_libs/all.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>cinetop alternative</title>
+</head>
+<body>
+    <header>
+        <div id="header">
+            <div id="l">
+                <a href="/" id="logo"></a>
+                <nav>
+                    <a href="#" style="opacity: 1;">Home <i class="fa fa-chevron-down"></i></a>
+                    <a href="#" style="opacity: 1;">Comédia <i class="fa fa-chevron-down"></i></a>
+                    <a href="#" style="opacity: 1;">Terror <i class="fa fa-chevron-down"></i></a>
+                    <a href="#" style="opacity: 1;">Acção <i class="fa fa-chevron-down"></i></a>
+                    <a href="#" style="opacity: 1;">Desenhos <i class="fa fa-chevron-down"></i></a>
+                </nav>
+            </div>
+
+            <div id="r">
+                <div id="theme"><i class="far fa-sun"></i></div>
+            </div>
+        </div>
+
+        <div id="categories">
+            <input type="search" placeholder="Make a search" id="search">
+            <ul></ul>
+        </div>
+    </header>
+    <video
+        id="my-video"
+        class="video-js vjs-big-play-centered"
+        controls
+        preload="auto"
+        width="600px"
+        height="400px"
+        poster="MY_VIDEO_POSTER.jpg"
+        data-setup="{}"
+    >
+        <source src="assets/img/mov_bbb.mp4" type="video/mp4" />
+        <!-- <source src="MY_VIDEO.webm" type="video/webm" /> -->
+        <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a
+        web browser that
+        <a href="https://videojs.com/html5-video-support/" target="_blank"
+            >supports HTML5 video</a
+        >
+        </p>
+    </video>
+
+    <div id="payment">
+        <div id="buttons">
+            <a href="#" id="btn-pay">Pagar</a>
+            <button id="btn-close-pay">Testar primeiro!</button>
+        </div>
+    </div>
+    
+    <script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
+    <script src="js/_libs/p5.js"></script>
+    <script src="js/Ehrenfest/Gas.js"></script>
+    <script src="js/Ehrenfest/sketch.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
